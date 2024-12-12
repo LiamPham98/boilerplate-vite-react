@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": "./src/", // Base URL and paths for resolving import aliases
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./components/*"],
+      "@/pages/*": ["./pages/*"],
+      "@/styles/*": ["./styles/*"],
+      "@/utils/*": ["./utils/*"],
+      "@/hooks/*": ["./hooks/*"],
+      "@/stores/*": ["./stores/*"],
+      "@/libs/*": ["./libs/*"],
+      "@/domain/*": ["./core/domain/*"],
+      "@/infras/*": ["./core/infras/*"],
+      "@/core/*": ["./core/*"],
+      "@/assets/*": ["./assets/*"]
+    },
+
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    // Specify which TypeScript files should be included and excluded during compilation
+    "**/*.ts",
+    "**/*.tsx",
+    "lint-staged.config.js",
+    "tailwind.config.js",
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,22 @@
+.Button {
+  --button-height-xs: calc(1.5rem* var(--mantine-scale));
+  --button-height-sm: calc(2rem* var(--mantine-scale));
+  --button-height-md: calc(2.5rem* var(--mantine-scale));
+  --button-height-lg: calc(3rem* var(--mantine-scale));
+}
+
+.Input {
+  --input-height-xs: calc(1.5rem* var(--mantine-scale));
+  --input-height-sm: calc(2rem* var(--mantine-scale));
+  --input-height-md: calc(2.5rem* var(--mantine-scale));
+  --input-height-lg: calc(3rem* var(--mantine-scale));
+  --input-height-xl: calc(3.5rem* var(--mantine-scale));
+}
+
+.Pagination {
+  --pagination-control-size-xs: calc(1.25rem* var(--mantine-scale));
+  --pagination-control-size-sm: calc(1.5rem* var(--mantine-scale));
+  --pagination-control-size-md: calc(2rem* var(--mantine-scale));
+  --pagination-control-size-lg: calc(2.5rem* var(--mantine-scale));
+  --pagination-control-size-xl: calc(3rem* var(--mantine-scale));
+}
