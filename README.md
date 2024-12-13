@@ -62,30 +62,34 @@ Open http://localhost:3000 with your favorite browser to see your project.
 
 ```shell
 .
-├── README.md               # README file
-├── .husky                  # Husky configuration
-├── .vscode                 # VSCode configuration
-├── public                  # Public assets folder
-├── index.html
-├── src
-│   ├── components          # React components
-│ 	│	├── atoms					    # These are the most basic UI components that cannot be broken down further.
-│ 	│	├── molecules				  # Molecules are combinations of atoms that form simple, functional components.
-│ 	│	├── organisms				  # Organisms are combinations of molecules and/or atoms that form more complex and reusable
-│   ├── core                # Core logic
-│   │ ├── domain            # Business Logic
-│   │ │ ├── entities        # Enterprise business rules
-│   │ │ ├── services        # application-specific business rules
-│   │ ├── infras            # The layer directly interfacing with the API.
-│   │ │ ├── dto             # Params Request
-│   │ │ ├── repositories    # Communicates with APIs.
-│   ├── hooks               # Type definitions
-│   ├── libs                # 3rd party libraries configuration
-│   ├── store               # Templates folder
-│   ├── styles              # Styles folder
-│   ├── utils               # Utilities folder
-├── tailwind.config.js      # Tailwind CSS configuration
-└── tsconfig.json           # TypeScript configuration
+├── README.md               # Documentation for the project, including how to set up and use the application.
+├── .husky                  # Configuration for Husky, which is used to manage Git hooks (e.g., pre-commit or pre-push hooks).
+├── .vscode                 # VSCode-specific configuration files, such as recommended extensions or workspace settings.
+├── public                  # Static public assets that are served directly (e.g., images, favicon, robots.txt).
+├── index.html              # Main HTML file that acts as the entry point for the application.
+├── src                     # Source code for the application.
+│   ├── components          # React components responsible for building the UI.
+│   │   ├── atoms           # Small, reusable UI components (e.g., buttons, input fields, icons).
+│   │   ├── molecules       # Combinations of atoms to form slightly more complex UI components (e.g., a form field with a label and input).
+│   │   ├── organisms       # Complex and reusable components made from atoms and molecules (e.g., headers, footers, or cards).
+│   ├── core                # Contains core logic and Clean Architecture layers.
+│   │   ├── application     # Application-level logic and business rules.
+│   │   │   ├── repositories # Interfaces for repositories, defining how data should be handled (e.g., CRUD operations).
+│   │   │   ├── services    # Business services that interact with repositories and execute application logic.
+│   │   │   ├── use-cases   # Specific use cases for the application, implementing business logic using services and repositories.
+│   │   ├── entities        # Domain entities and business logic.
+│   │   │   ├── models      # Domain models representing the core data structures (e.g., User, Product).
+│   │   │   ├── dto         # Data Transfer Objects used to define the shape of data sent or received.
+│   │   ├── infrastructure  # Handles communication with external systems (e.g., APIs).
+│   │   │   ├── services    # Parameter configurations and request structures for API interactions.
+│   │   │   ├── repositories # Concrete implementations of repository interfaces for API communication.
+│   ├── hooks               # Custom React hooks for managing reusable logic (e.g., useFetch, useAuth).
+│   ├── libs                # Configuration for third-party libraries (e.g., Axios, i18n, or any library-specific setup).
+│   ├── store               # State management setup (e.g., Redux, Zustand, or Context API configurations).
+│   ├── styles              # Global or component-specific styles (e.g., CSS, SCSS, or Tailwind CSS imports).
+│   ├── utils               # Utility functions and helpers (e.g., date formatters, validation utilities).
+├── tailwind.config.js      # Configuration file for Tailwind CSS, customizing the design system (e.g., colors, spacing).
+└── tsconfig.json           # TypeScript configuration file for defining project-specific TypeScript settings.
 ```
 
 ### Commit Message Format
