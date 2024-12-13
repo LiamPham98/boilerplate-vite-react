@@ -8,6 +8,7 @@
 @import "@mantine/dropzone/styles.css";
 
 @import "../fonts/stylesheet.css";
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -20,7 +21,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Lexend", "Inter", sans-serif;
   font-optical-sizing: auto;
 }
 

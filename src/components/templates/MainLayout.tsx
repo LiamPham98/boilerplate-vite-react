@@ -10,7 +10,7 @@ export const BaseTemplate = () => {
       <Header />
       <main
         className={cn(
-          "w-full antialiased transition-all duration-200 ease-linear h-screen overflow-auto",
+          "w-full antialiased transition-all duration-200 ease-linear",
         )}
       >
         <Outlet />

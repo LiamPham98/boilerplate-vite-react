@@ -16,14 +16,16 @@ export const Header = () => {
   const { isSignedIn } = useAuth();
 
   return (
-    <Paper
-      px={20}
-      py={12}
-      className="mx-auto flex max-w-screen-xl items-center gap-6"
-    >
+    <Paper py={12} className="mx-auto flex max-w-screen-xl items-center gap-6">
       <Flex align="center">
         <Image src={Avatar} alt="avatar" className="size-14" />
-        <Text size="heading-3">{`I'm.Liam`}</Text>
+        <a
+          href="https://www.linkedin.com/in/trungpham98/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Text size="heading-3">{`I'm.Liam`}</Text>
+        </a>
       </Flex>
 
       <Flex align="center" gap="md" ml="auto">

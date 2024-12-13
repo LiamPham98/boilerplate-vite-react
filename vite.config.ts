@@ -26,7 +26,6 @@ export default defineConfig({
     tsconfigPaths(),
     svgr({
       svgrOptions: {
-        icon: true,
         svgo: true, // Enable SVG optimization
         svgoConfig: {
           plugins: [
