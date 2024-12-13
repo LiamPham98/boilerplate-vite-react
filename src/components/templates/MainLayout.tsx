@@ -1,13 +1,20 @@
+import { Outlet } from "react-router";
+
 import { cn } from "@/utils/function";
+
+import { Header } from "../organisms/Header";
 
 export const BaseTemplate = () => {
   return (
-    <section className="flex">
+    <section className="bg-white">
+      <Header />
       <main
         className={cn(
-          "w-full pl-[274px] bg-gray-2 antialiased transition-all duration-200 ease-linear h-screen overflow-auto",
+          "w-full antialiased transition-all duration-200 ease-linear h-screen overflow-auto",
         )}
-      />
+      >
+        <Outlet />
+      </main>
     </section>
   );
 };

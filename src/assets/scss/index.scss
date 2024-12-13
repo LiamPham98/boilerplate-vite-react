@@ -9,19 +9,9 @@
 
 @import "../fonts/stylesheet.css";
 
-.mantine-DateInput-levelsGroup {
-  [data-selected="true"] {
-    background-color: #ffbc37;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
-}
-
-::-webkit-scrollbar-track {
-  // box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3)
 }
 
 ::-webkit-scrollbar-thumb {
@@ -32,10 +22,6 @@
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-}
-
-.sticky-actions {
-  @apply sticky top-[59px] z-10 shadow-xs;
 }
 
 :root {

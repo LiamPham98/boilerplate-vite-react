@@ -5,11 +5,9 @@ export default {
   theme: {
     extend: {
       screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1440px",
-        "2xl": "1920px",
+        tablet: "640px",
+        laptop: "1024px",
+        desktop: "1280px",
       },
       maxWidth: {
         "8xl": "90rem",
@@ -178,53 +176,53 @@ export default {
           9: "var(--orange-9)",
         },
       },
-    },
-    boxShadow: {
-      xs: "0px 1px 2px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
-      sm: "0px 7px 7px -5px rgba(0, 0, 0, 0.04), 0px 10px 15px -5px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
-      md: "0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
-      lg: "0px 12px 12px -7px rgba(0, 0, 0, 0.04), 0px 28px 23px -7px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
-      xl: "0px 17px 17px -7px rgba(0, 0, 0, 0.04), 0px 36px 28px -7px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
-    },
-    fontSize: {
-      //  Heading
-      "40xl/700": ["40px", { lineHeight: "48px", fontWeight: "700" }],
-      "32xl/700": ["32px", { lineHeight: "40px", fontWeight: "700" }],
-      "24xl/700": ["24px", { lineHeight: "32px", fontWeight: "700" }],
-      "20xl/700": ["20px", { lineHeight: "28px", fontWeight: "700" }],
-      "18xl/700": ["18px", { lineHeight: "24px", fontWeight: "700" }],
-      "16xl/700": ["16px", { lineHeight: "20px", fontWeight: "700" }],
-      "12xl/700": ["12px", { lineHeight: "16px", fontWeight: "700" }],
+      boxShadow: {
+        xs: "0px 1px 2px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
+        sm: "0px 7px 7px -5px rgba(0, 0, 0, 0.04), 0px 10px 15px -5px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
+        md: "0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
+        lg: "0px 12px 12px -7px rgba(0, 0, 0, 0.04), 0px 28px 23px -7px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
+        xl: "0px 17px 17px -7px rgba(0, 0, 0, 0.04), 0px 36px 28px -7px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.05)",
+      },
+      fontSize: {
+        //  Heading
+        "40xl/700": ["40px", { lineHeight: "48px", fontWeight: "700" }],
+        "32xl/700": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+        "24xl/700": ["24px", { lineHeight: "32px", fontWeight: "700" }],
+        "20xl/700": ["20px", { lineHeight: "28px", fontWeight: "700" }],
+        "18xl/700": ["18px", { lineHeight: "24px", fontWeight: "700" }],
+        "16xl/700": ["16px", { lineHeight: "20px", fontWeight: "700" }],
+        "12xl/700": ["12px", { lineHeight: "16px", fontWeight: "700" }],
 
-      // Text bold
-      "20md/600": ["20px", { lineHeight: "24px", fontWeight: "600" }],
-      "18md/600": ["18px", { lineHeight: "20px", fontWeight: "600" }],
-      "16md/600": ["16px", { lineHeight: "18px", fontWeight: "600" }],
-      "14md/600": ["14px", { lineHeight: "16px", fontWeight: "600" }],
-      "12md/600": ["12px", { lineHeight: "14px", fontWeight: "600" }],
-      "10md/600": ["10px", { lineHeight: "12px", fontWeight: "600" }],
+        // Text bold
+        "20md/600": ["20px", { lineHeight: "24px", fontWeight: "600" }],
+        "18md/600": ["18px", { lineHeight: "20px", fontWeight: "600" }],
+        "16md/600": ["16px", { lineHeight: "18px", fontWeight: "600" }],
+        "14md/600": ["14px", { lineHeight: "16px", fontWeight: "600" }],
+        "12md/600": ["12px", { lineHeight: "14px", fontWeight: "600" }],
+        "10md/600": ["10px", { lineHeight: "12px", fontWeight: "600" }],
 
-      // Text semi bold
-      "20md/500": ["20px", { lineHeight: "24px", fontWeight: "500" }],
-      "18md/500": ["18px", { lineHeight: "20px", fontWeight: "500" }],
-      "16md/500": ["16px", { lineHeight: "18px", fontWeight: "500" }],
-      "14md/500": ["14px", { lineHeight: "16px", fontWeight: "500" }],
-      "12md/500": ["12px", { lineHeight: "14px", fontWeight: "500" }],
+        // Text semi bold
+        "20md/500": ["20px", { lineHeight: "24px", fontWeight: "500" }],
+        "18md/500": ["18px", { lineHeight: "20px", fontWeight: "500" }],
+        "16md/500": ["16px", { lineHeight: "18px", fontWeight: "500" }],
+        "14md/500": ["14px", { lineHeight: "16px", fontWeight: "500" }],
+        "12md/500": ["12px", { lineHeight: "14px", fontWeight: "500" }],
 
-      // Text
-      "20md/400": ["20px", { lineHeight: "24px", fontWeight: "400" }],
-      "18md/400": ["18px", { lineHeight: "20px", fontWeight: "400" }],
-      "16md/400": ["16px", { lineHeight: "18px", fontWeight: "400" }],
-      "14md/400": ["14px", { lineHeight: "16px", fontWeight: "400" }],
-      "12md/400": ["12px", { lineHeight: "14px", fontWeight: "400" }],
-    },
-    animation: {
-      pulse: "pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;",
-    },
-    keyframes: {
-      pulse: {
-        "0%, 100%": { opacity: "1" },
-        "50%": { opacity: "0.3" },
+        // Text
+        "20md/400": ["20px", { lineHeight: "24px", fontWeight: "400" }],
+        "18md/400": ["18px", { lineHeight: "20px", fontWeight: "400" }],
+        "16md/400": ["16px", { lineHeight: "18px", fontWeight: "400" }],
+        "14md/400": ["14px", { lineHeight: "16px", fontWeight: "400" }],
+        "12md/400": ["12px", { lineHeight: "14px", fontWeight: "400" }],
+      },
+      animation: {
+        pulse: "pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;",
+      },
+      keyframes: {
+        pulse: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.3" },
+        },
       },
     },
   },

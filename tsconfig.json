@@ -37,7 +37,8 @@
       "@/domain/*": ["./core/domain/*"],
       "@/infras/*": ["./core/infras/*"],
       "@/core/*": ["./core/*"],
-      "@/assets/*": ["./assets/*"]
+      "@/assets/*": ["./assets/*"],
+      "@/routes/*": ["./routes/*"]
     },
 
     "allowSyntheticDefaultImports": true

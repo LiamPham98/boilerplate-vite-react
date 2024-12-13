@@ -25,7 +25,17 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
     svgr({
-      svgrOptions: {},
+      svgrOptions: {
+        icon: true,
+        svgo: true, // Enable SVG optimization
+        svgoConfig: {
+          plugins: [
+            {
+              name: "removeViewBox",
+            },
+          ],
+        },
+      },
       esbuildOptions: {},
       include: "**/*.svg?react",
       exclude: "",

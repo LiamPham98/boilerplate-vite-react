@@ -1,15 +1,22 @@
 ```shell
 
- /$$$$$$$  /$$   /$$  /$$$$$$   /$$$$$$  /$$     /$$
-| $$__  $$| $$  | $$ /$$__  $$ /$$__  $$|  $$   /$$/
-| $$  \ $$| $$  | $$| $$  \__/| $$  \__/ \  $$ /$$/
-| $$$$$$$ | $$  | $$| $$ /$$$$| $$ /$$$$  \  $$$$/
-| $$__  $$| $$  | $$| $$|_  $$| $$|_  $$   \  $$/
-| $$  \ $$| $$  | $$| $$  \ $$| $$  \ $$    | $$
-| $$$$$$$/|  $$$$$$/|  $$$$$$/|  $$$$$$/    | $$
-|_______/  \______/  \______/  \______/     |__/
++-----------------------------------------+
+|                                         |
+|      ______   __       __   ______      |
+|     /      \ |  \     /  \ /      \     |
+|    |  $$$$$$\| $$\   /  $$|  $$$$$$\    |
+|    | $$   \$$| $$$\ /  $$$| $$___\$$    |
+|    | $$      | $$$$\  $$$$ \$$    \     |
+|    | $$   __ | $$\$$ $$ $$ _\$$$$$$\    |
+|    | $$__/  \| $$ \$$$| $$|  \__| $$    |
+|     \$$    $$| $$  \$ | $$ \$$    $$    |
+|      \$$$$$$  \$$      \$$  \$$$$$$     |
+|                                         |
++-----------------------------------------+
 
 ```
+
+Built by [Trung Phạm](https://www.linkedin.com/in/trungpham98/)
 
 ### Features
 
@@ -24,12 +31,9 @@
 - 🚫 Lint-staged for running linters on Git staged files
 - 🚓 Lint git commit with [Commitlint](https://commitlint.js.org/)
 - 📓 Write standard compliant commit messages with [Commitizen](https://commitlint.js.org/reference/rules.html#type-enum)
-- 🚨 Error Monitoring with [DATADOG](https://docs.datadoghq.com/real_user_monitoring/guide/monitor-your-nextjs-app-with-rum/?tab=npm)
 - 💡 Absolute Imports using `@` prefix
 - 🗂 VSCode configuration: Debug, Settings and Extensions
 - 🌱 Phosphor [Icons](https://phosphoricons.com/)
-
-
 
 ### Requirements
 
@@ -53,7 +57,6 @@ pnpm run dev
 ```
 
 Open http://localhost:3000 with your favorite browser to see your project.
-
 
 ### Project structure
 

@@ -1,7 +1,7 @@
 import App from "App";
 import { Suspense } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router";
 import { ROUTER, type Router } from "routes/router";
 
 const renderRoute = (routers: Router[]): any => {

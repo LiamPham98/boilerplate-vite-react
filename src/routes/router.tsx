@@ -20,7 +20,7 @@ export const ROUTER: Router[] = [
     children: [
       {
         label: "Product",
-        path: "/products",
+        path: "/",
         children: [
           {
             index: true,
